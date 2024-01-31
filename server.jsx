@@ -8,7 +8,7 @@ const app = express()
 
 app.get('/', (req, res) => res.send('Hello world'))
 
-mongoose.connect(`mongodb+srv://bhoomikahm18:${process.env.PASSWORD}@cluster0.276ab22.mongodb.net/cars?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://bhoomikahm18:${process.env.PASSWORD}@cluster0.276ab22.mongodb.net/`)
     .then(app.listen(process.env.PORT))
     .then(() => console.log(`Connected to database and server is running at ${process.env.PORT}`)
     )
